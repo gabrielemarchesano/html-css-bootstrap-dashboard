@@ -24,11 +24,10 @@
     <header>
       <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
         <div class="container-fluid">
-          
           <a class="navbar-brand" href="#">
             <img width="50px" src="./assets/img/duck.png" alt="" />
           </a>
-          
+
           <button
             class="navbar-toggler"
             type="button"
@@ -80,18 +79,55 @@
     <main>
       <div class="container text-center">
         <div class="row">
-          
           <div class="col">
             <div class="d-flex justify-content-between">
-              <span >Catalogo libri</span>
-              <a class="btn btn-primary" href="#" role="button">Aggiungi Libro</a>
+              <span>Catalogo libri</span>
+              <a class="btn btn-primary" href="#" role="button"
+                >Aggiungi Libro</a
+              >
             </div>
 
+            <table class="table table-striped text-start">
+              
+              <thead>
+                <tr>
+                  <th scope="col">Titolo</th>
+                  <th scope="col">Data prestito</th>
+                  <th scope="col">Stato</th>
+                  <th class="text-center" scope="col">Azioni</th>
+                </tr>
+              </thead>
+              
+              <tbody>
+               
+                <tr>
+                  <td>I pilastri della terra</td>
+                  <td>-</td>
+                  <td><span class="badge text-bg-success">Disponibile</span></td>
+                  <td class="text-center">
+                    <button type="button" class="btn btn-outline-secondary btn-sm"><i class="bi bi-pencil-fill"></i></button>
+                    <button type="button" class="btn btn-outline-secondary btn-sm"><i class="bi bi-trash-fill"></i></button>
+                  </td>
+                </tr>
+                
+                <tr>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                
+                <tr>
+                  <td>John</td>
+                  <td>Doe</td>
+                  <td>@social</td>
+                </tr>
 
+              </tbody>
+
+            </table>
           </div>
-          
-          <div class="col">Column</div>
 
+          <div class="col">Column</div>
         </div>
       </div>
     </main>
