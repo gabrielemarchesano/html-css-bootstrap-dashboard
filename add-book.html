@@ -57,8 +57,10 @@
   </header>
 
   <main>
-    <div class="container">
-      <h1>Nuovo libro</h1>
+    <div class="container my-4">
+      
+      <h1 class="mb-4">Nuovo libro</h1>
+      
       <form action="">
         
         <div class="row my-4 pb-4 border-bottom">
@@ -115,7 +117,29 @@
 
         </div>
 
-        
+        <div class="row">
+          <div class="col-12">
+            
+            <div class="mb-3">
+              <label for="notes" class="form-label">Note</label>
+              <textarea class="form-control" name="notes" id="notes" rows="4" placeholder="Inserisci eventuali note sul libro"></textarea>
+            </div>
+              
+            
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" value="" id="checkAvailable">
+              <label class="form-check-label" for="checkAvailable">
+                Disponibile anche in digitale
+              </label>
+            </div>
+
+            <a class="btn btn-primary" href="#" role="button">
+              Aggiungi Libro
+            </a>
+
+          </div>
+        </div>
+
 
       </form>
     </div>
